@@ -12,3 +12,4 @@ Kakao Login Springboot Application
 3. Once the user approves permissions by clicking [Accept and Continue], the Kakao authorization server validates the user’s credentials and issues an authorization code. The user is redirected back to your app with the authorization code via redirect_uri.
 4. Your app requests an access token and a refresh token with the issued authorization code by calling the Getting tokens.
 5. The Kakao authorization server validates the request, issues an access token and a refresh token based on the authorization code, and provides authorization. See Token information to learn more about the access token and refresh token.
+- [Kakao Login](https://lotuus.tistory.com/104) - following vlog shows how to register application to kakao developers and set the configuration in Spring Api
