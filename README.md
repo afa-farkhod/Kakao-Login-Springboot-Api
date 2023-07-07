@@ -22,3 +22,25 @@ Kakao Login Springboot Application
 - [Kakao Login3](https://velog.io/@shwncho/Spring-Boot-%EC%B9%B4%EC%B9%B4%EC%98%A4-%EB%A1%9C%EA%B7%B8%EC%9D%B8-APIoAuth-2.0) - another useful vlog which shows Kakao Login Api
 - [Github Repository](https://github.com/daeheejeong/kakaoauth) - Github repository which shows the implementation of Kakao Login
 - [Github Repository2](https://github.com/Torres-09/kakao-login-example/tree/main) - Another Github repository which shows the implementation of Kakao Login
+
+## Spring Boot `application.properties` setting:
+```
+# Kakao OAuth2 Configuration
+spring.security.oauth2.client.registration.kakao.client-id=YOUR_CLIENT_ID
+spring.security.oauth2.client.registration.kakao.client-secret=YOUR_CLIENT_SECRET
+spring.security.oauth2.client.registration.kakao.redirect-uri=YOUR_REDIRECT_URI
+spring.security.oauth2.client.registration.kakao.authorization-grant-type=authorization_code
+spring.security.oauth2.client.registration.kakao.scope=profile,account_email
+
+# Custom Login Path
+spring.security.oauth2.client.registration.kakao.client-name=Kakao
+spring.security.oauth2.client.registration.kakao.client-authentication-method=basic
+spring.security.oauth2.client.registration.kakao.client-alias=kakao
+
+# Provider-specific properties
+spring.security.oauth2.client.provider.kakao.authorization-uri=https://kauth.kakao.com/oauth/authorize
+spring.security.oauth2.client.provider.kakao.token-uri=https://kauth.kakao.com/oauth/token
+spring.security.oauth2.client.provider.kakao.user-info-uri=https://kapi.kakao.com/v2/user/me
+spring.security.oauth2.client.provider.kakao.user-name-attribute=id
+spring.security.oauth2.client.provider.kakao.jwk-set-uri=https://kapi.kakao.com/v1/keys
+```
