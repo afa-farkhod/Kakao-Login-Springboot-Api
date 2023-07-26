@@ -23,7 +23,7 @@ Kakao Login Springboot Application
 - [Github Repository](https://github.com/daeheejeong/kakaoauth) - Github repository which shows the implementation of Kakao Login
 - [Github Repository2](https://github.com/Torres-09/kakao-login-example/tree/main) - Another Github repository which shows the implementation of Kakao Login
 
-## Spring Boot `application.properties` setting:
+## Spring Boot `application.properties`:
 ```
 # Kakao OAuth2 Configuration
 spring.security.oauth2.client.registration.kakao.client-id=YOUR_CLIENT_ID
