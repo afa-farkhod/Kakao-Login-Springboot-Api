@@ -35,7 +35,7 @@ spring.security.oauth2.client.provider.kakao.user-name-attribute=id
 spring.security.oauth2.client.provider.kakao.jwk-set-uri=https://kapi.kakao.com/v1/keys
 ```
 
-## [References:]() 
+## [Reference:]() 
 
 - [Kakao Login](https://lotuus.tistory.com/104) - following vlog shows how to register application to kakao developers and set the configuration in Spring Api
 - [Kakao Login2](https://kakao-tam.tistory.com/115) - another useful vlog which also shows how to make Spring Api for Kakao Login
