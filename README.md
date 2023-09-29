@@ -27,8 +27,12 @@ Kakao Login Springboot Application
 
 ![image](https://github.com/af4092/Kakao-Login-Springboot-Api/assets/24220136/0c17931c-65de-4c6d-9032-05f0a447c22f)
 
+4. Then we have to state `Consent Items` on `developers.kakao.com` site.
 
-5. Then we go back to Spring application and code `application.properties` and `secure.properties` 
+![image](https://github.com/af4092/Kakao-Login-Springboot-Api/assets/24220136/19f2aeb7-873f-493f-b526-aea7521db05c)
+
+
+6. Then we go back to Spring application and code `application.properties` and `secure.properties` 
 
 
 ## [Reference]()
