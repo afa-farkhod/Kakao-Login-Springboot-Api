@@ -19,7 +19,11 @@ Kakao Login Springboot Application
 
   <img width="1326" alt="image" src="https://github.com/af4092/Kakao-Login-Springboot-Api/assets/24220136/54ddc0c6-5406-4b86-ba33-ae4004719a24">
 
-3. 
+2. Then we register our application on `developers.kakao.com` site.
+
+![image](https://github.com/af4092/Kakao-Login-Springboot-Api/assets/24220136/6026692b-f4f8-4c17-b87d-6174d0ac1930)
+
+
 ## [Reference]()
 
 - [Kakao Developers Docs](https://developers.kakao.com/docs/latest/en/index) - Official documentation for Kakao application registration on `developers.kakao.com` site.
