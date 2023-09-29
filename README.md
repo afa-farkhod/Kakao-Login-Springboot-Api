@@ -13,28 +13,13 @@ Kakao Login Springboot Application
 4. Your app requests an access token and a refresh token with the issued authorization code by calling the Getting tokens.
 5. The Kakao authorization server validates the request, issues an access token and a refresh token based on the authorization code, and provides authorization. See Token information to learn more about the access token and refresh token.
 
-## Spring Boot `application.properties`:
-```
-# Kakao OAuth2 Configuration
-spring.security.oauth2.client.registration.kakao.client-id=YOUR_CLIENT_ID
-spring.security.oauth2.client.registration.kakao.client-secret=YOUR_CLIENT_SECRET
-spring.security.oauth2.client.registration.kakao.redirect-uri=YOUR_REDIRECT_URI
-spring.security.oauth2.client.registration.kakao.authorization-grant-type=authorization_code
-spring.security.oauth2.client.registration.kakao.scope=profile,account_email
+## [Implementation]()
 
-# Custom Login Path
-spring.security.oauth2.client.registration.kakao.client-name=Kakao
-spring.security.oauth2.client.registration.kakao.client-authentication-method=basic
-spring.security.oauth2.client.registration.kakao.client-alias=kakao
+1. First we code Server Application on Java SpringBoot. Source code is given in the `Kakao-Login-Springboot-Api` folder. Then we run the Spring application to test.
 
-# Provider-specific properties
-spring.security.oauth2.client.provider.kakao.authorization-uri=https://kauth.kakao.com/oauth/authorize
-spring.security.oauth2.client.provider.kakao.token-uri=https://kauth.kakao.com/oauth/token
-spring.security.oauth2.client.provider.kakao.user-info-uri=https://kapi.kakao.com/v2/user/me
-spring.security.oauth2.client.provider.kakao.user-name-attribute=id
-spring.security.oauth2.client.provider.kakao.jwk-set-uri=https://kapi.kakao.com/v1/keys
-```
+  <img width="1326" alt="image" src="https://github.com/af4092/Kakao-Login-Springboot-Api/assets/24220136/54ddc0c6-5406-4b86-ba33-ae4004719a24">
 
+3. 
 ## [Reference]()
 
 - [Kakao Developers Docs](https://developers.kakao.com/docs/latest/en/index) - Official documentation for Kakao application registration on `developers.kakao.com` site.
