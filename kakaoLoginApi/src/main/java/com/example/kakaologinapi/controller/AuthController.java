@@ -19,27 +19,32 @@ import java.util.logging.Logger;
 public class AuthController {
 
     private final Logger log = Logger.getLogger(AuthController.class.getName());
+    private final static String LOGIN_MSG = "Login successful!";
+    private final static String AUTH_CODE_MSG = "(Authorization code ";
+    private final static String TEST_MSG = "Test successful!";
+    private final static String LOGIN_FAIL_MSG = "Login failed!";
+    private final static String AUTH_CODE_MSG2 = "Authorization Code is ";
 
     @Autowired
     private KakaoApi kakaoAPI;
 
     @GetMapping("/test")
     public String Hello(){
-        return "Test Working";
+        return TEST_MSG;
     }
 
     @GetMapping(path="/kakaoLogin")
     public ResponseEntity<String> login(@RequestParam("code") String code, Model model) {
-        log.info("Authorization Code is " + code);
+        log.info(AUTH_CODE_MSG2 + code);
         String accessToken = kakaoAPI.getAccessToken(code);
         KakaoUserInfo kakaoUserInfo = null;
         if (accessToken != null && !accessToken.isEmpty()) {
             kakaoUserInfo = kakaoAPI.getUserInfo(accessToken);
             if (kakaoUserInfo != null) {
-                return ResponseEntity.ok("Login successful! " + "(Authorization code " + code + " )");
+                return ResponseEntity.ok(LOGIN_MSG + AUTH_CODE_MSG + code + " )");
             }
         }
         model.addAttribute("kakaoUserInfo", kakaoUserInfo);
-        return ResponseEntity.badRequest().body("Login failed!");
+        return ResponseEntity.badRequest().body(LOGIN_FAIL_MSG);
     }
 }
