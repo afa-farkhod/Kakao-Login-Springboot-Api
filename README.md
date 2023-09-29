@@ -34,3 +34,7 @@ spring.security.oauth2.client.provider.kakao.user-info-uri=https://kapi.kakao.co
 spring.security.oauth2.client.provider.kakao.user-name-attribute=id
 spring.security.oauth2.client.provider.kakao.jwk-set-uri=https://kapi.kakao.com/v1/keys
 ```
+
+## [Reference]()
+
+- [Kakao Developers Docs](https://developers.kakao.com/docs/latest/en/index) - Official documentation for Kakao application registration on `developers.kakao.com` site.
