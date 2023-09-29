@@ -23,6 +23,13 @@ Kakao Login Springboot Application
 
 ![image](https://github.com/af4092/Kakao-Login-Springboot-Api/assets/24220136/6026692b-f4f8-4c17-b87d-6174d0ac1930)
 
+3. Then we register our `Redirect URI` on `developers.kakao.com` site.
+
+![image](https://github.com/af4092/Kakao-Login-Springboot-Api/assets/24220136/0c17931c-65de-4c6d-9032-05f0a447c22f)
+
+
+5. Then we go back to Spring application and code `application.properties` and `secure.properties` 
+
 
 ## [Reference]()
 
