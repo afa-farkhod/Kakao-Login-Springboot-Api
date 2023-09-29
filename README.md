@@ -44,10 +44,18 @@ kakao.client.secret=${kakao.client.secret}
 
 ![image](https://github.com/af4092/Kakao-Login-Springboot-Api/assets/24220136/9cf2a13a-fc3a-493d-9a79-934d71818313)
 
-- Client secret code
+- Client secret code:
 
 ![image](https://github.com/af4092/Kakao-Login-Springboot-Api/assets/24220136/a85a3ae9-1513-4646-98a9-b35a338100d5)
 
+6. Then we have to make sample `html web page` and define the URL
+7. Then when start the Server application and go to page it looks as following:
+
+![image](https://github.com/af4092/Kakao-Login-Springboot-Api/assets/24220136/f73fed46-3252-4786-9db0-2a49760e5170)
+
+8. When we press the Kakao Login button it redirect to the URI link and as the back we get `Authorization code` as following:
+   
+![image](https://github.com/af4092/Kakao-Login-Springboot-Api/assets/24220136/7f7e73f0-6916-490f-8749-3bedb9028122)
 
 ## [Reference]()
 
