@@ -31,8 +31,16 @@ Kakao Login Springboot Application
 
 ![image](https://github.com/af4092/Kakao-Login-Springboot-Api/assets/24220136/19f2aeb7-873f-493f-b526-aea7521db05c)
 
+5. Then we go back to Spring application and code `application.properties` and `secure.properties`
 
-6. Then we go back to Spring application and code `application.properties` and `secure.properties` 
+```
+#developers.kakao.com/My Application/App Settings/APP KEYS/REST API key
+kakao.api.key=${kakao.api.key}
+kakao.client.id=${kakao.client.id}
+#developers.kakao.com/My Application/Product Settings/Kakao Login/Security/Code
+kakao.client.secret=${kakao.client.secret}
+```
+![image](https://github.com/af4092/Kakao-Login-Springboot-Api/assets/24220136/9cf2a13a-fc3a-493d-9a79-934d71818313)
 
 
 ## [Reference]()
