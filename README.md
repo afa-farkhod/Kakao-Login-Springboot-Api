@@ -35,12 +35,18 @@ Kakao Login Springboot Application
 
 ```
 #developers.kakao.com/My Application/App Settings/APP KEYS/REST API key
-kakao.api.key=${kakao.api.key}
-kakao.client.id=${kakao.client.id}
+kakao.api.key=${kakao.api.key}     --> REST API key
+kakao.client.id=${kakao.client.id} --> REST API key
 #developers.kakao.com/My Application/Product Settings/Kakao Login/Security/Code
 kakao.client.secret=${kakao.client.secret}
 ```
+- App Keys:
+
 ![image](https://github.com/af4092/Kakao-Login-Springboot-Api/assets/24220136/9cf2a13a-fc3a-493d-9a79-934d71818313)
+
+- Client secret code
+
+![image](https://github.com/af4092/Kakao-Login-Springboot-Api/assets/24220136/a85a3ae9-1513-4646-98a9-b35a338100d5)
 
 
 ## [Reference]()
